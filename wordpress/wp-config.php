@@ -1,4 +1,10 @@
 <?php
+
+// BEGIN iThemes Security - Do not modify or remove this line
+// iThemes Security Config Details: 2
+define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
+// END iThemes Security - Do not modify or remove this line
+
 /**
  * La configuration de base de votre installation WordPress.
  *
@@ -19,6 +25,8 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'C:\Wamp\www\cours-wordpress\wordpress\wp-content\plugins\wp-super-cache/' );
 define('DB_NAME', 'wordpress');
 
 /** Utilisateur de la base de données MySQL. */
